@@ -55,6 +55,15 @@ export const translations = {
         logo: '/unc chapel hill.webp'
       },
       {
+        id: 6,
+        period: 'SEP 2024 — JAN 2025',
+        role: 'Project Manager',
+        institution: 'Democrats at McGill (Montréal, Quebec)',
+        description: 'Led graphic design and digital communication strategy for the association while taking an active part in executive decision-making and strategic discussions.',
+        highlight: 'Project Management',
+        category: 'experience'
+      },
+      {
         id: 2,
         period: 'AUG 2022 — DEC 2025',
         role: 'BA in Political Science',
@@ -150,6 +159,15 @@ export const translations = {
         highlight: 'Échange Universitaire',
         category: 'education',
         logo: '/unc chapel hill.webp'
+      },
+      {
+        id: 6,
+        period: 'SEPT 2024 — JANV 2025',
+        role: 'Chef de Projet',
+        institution: 'Democrats at McGill (Montréal, Québec)',
+        description: 'Direction de la création graphique et de la communication visuelle de l’association, avec participation active aux réunions stratégiques et prises de décision.',
+        highlight: 'Chef de Projet',
+        category: 'experience'
       },
       {
         id: 2,
