@@ -53,8 +53,8 @@ export const AboutTimeline: React.FC<AboutTimelineProps> = () => {
           const isEducation = item.category === 'education';
 
           return (
-            <div key={item.id} className="list-row animate-reveal" style={{ animationDelay: `${idx * 0.1}s` }}>
-              {/* Left Column: Date & Category Pill */}
+            <div key={item.id} className="list-row animate-reveal" style={{ animationDelay: `${idx * 0.08}s` }}>
+              {/* Left Column: Date & Uniform Category Badge */}
               <div className="list-col-date">
                 <span className="date-text">
                   <Calendar size={13} className="date-icon" />
@@ -62,7 +62,7 @@ export const AboutTimeline: React.FC<AboutTimelineProps> = () => {
                 </span>
                 <span className={`category-tag ${item.category}`}>
                   {isEducation ? <GraduationCap size={12} /> : <Briefcase size={12} />}
-                  {item.highlight}
+                  <span>{isEducation ? t.categoryEducation : 'EXPERIENCE'}</span>
                 </span>
               </div>
 
