@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Loader2, Mail, Code2, ArrowDownRight, FileText } from 'lucide-react';
+import { Loader2, Code2 } from 'lucide-react';
 import { useGithubRepos } from './hooks/useGithubRepos';
 import { RepoCard } from './components/RepoCard';
 import { PhotoGallery } from './components/PhotoGallery';
@@ -66,22 +66,6 @@ function MainLayout() {
               <div className="hero-badge">{t.location}</div>
             </div>
             <p className="hero-tagline-text">{t.heroTagline}</p>
-
-            {/* Premium CTA Actions */}
-            <div className="hero-cta-group">
-              <button className="btn-cta-primary" onClick={() => setIsDrawerOpen(true)}>
-                <Mail size={16} />
-                <span>{t.navContact} & CV</span>
-              </button>
-              <a href="#journey" className="btn-cta-secondary">
-                <span>View Academic Journey</span>
-                <ArrowDownRight size={16} />
-              </a>
-              <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="btn-cta-secondary cv-pdf-btn">
-                <FileText size={16} />
-                <span>CV (PDF)</span>
-              </a>
-            </div>
           </div>
         </section>
 
