@@ -106,37 +106,37 @@ export const translations = {
     navContact: 'Contact',
 
     // Hero
-    heroSubtitle: 'Futur étudiant en MSc European & International Politics & Policy à la LSE',
-    heroTagline: 'Diplômé BA McGill en Science Politique • Analyse des Politiques Publiques',
+    heroSubtitle: 'Admis en MSc European & International Politics & Policy à la LSE',
+    heroTagline: 'Diplômé BA en Science Politique à McGill • Analyse des Politiques Publiques & Affaires Internationales',
     location: 'Londres, R-U / Montréal, Canada',
 
     // About / Journey Section
     aboutBadge: 'PROFIL ACADÉMIQUE & PARCOURS',
-    aboutHeading: "ANALYSE DES POLITIQUES PUBLIQUES ET AFFAIRES EUROPÉENNES & INTERNATIONALES.",
-    aboutText: "Formé à l'analyse et à la formulation des politiques publiques. J'applique des compétences analytiques et une connaissance approfondie des politiques américaine et européenne pour cadrer efficacement les enjeux dans un monde en constante mutation. Pratique de la photographie depuis 2019.",
-    btnViewResume: 'VOIR LE CV (PDF)',
+    aboutHeading: "ANALYSE POLITIQUE, AFFAIRES EUROPÉENNES ET INTERNATIONALES.",
+    aboutText: "Spécialisé dans l'analyse et la formulation des politiques publiques. Mettant à profit mes compétences analytiques et une fine compréhension des enjeux politiques américains et européens pour apporter des solutions concrètes dans un monde en mutation. Pratique de la photographie depuis 2019.",
+    btnViewResume: 'CONSULTER LE CV (PDF)',
     timelineTitle: 'PARCOURS ACADÉMIQUE ET PROFESSIONNEL',
 
     categoryEducation: 'FORMATION',
-    categoryExperience: 'EXPÉRIENCE & LEADERSHIP',
+    categoryExperience: 'EXPÉRIENCE ET ENGAGEMENT',
 
     timelineItems: [
       {
         id: 1,
         period: 'SEP 2026 — PRÉSENT',
-        role: 'MSc in European and International Politics and Policy',
+        role: 'MSc European and International Politics and Policy',
         institution: 'London School of Economics and Political Science (LSE)',
-        description: 'Formation supérieure spécialisée sur la gouvernance européenne, la formulation des politiques internationales et l’analyse quantitative des politiques publiques.',
-        highlight: 'Futur Master MSc',
+        description: 'Master spécialisé axé sur la gouvernance européenne, la formulation des politiques internationales, l’intégration régionale et la recherche quantitative appliquée.',
+        highlight: 'Master MSc',
         category: 'education',
         logo: '/lse logo.png'
       },
       {
         id: 4,
         period: 'MAI 2025 — AOÛT 2025',
-        role: 'Stagiaire en Développement de Politiques',
+        role: 'Stagiaire en Élaboration des Politiques Publiques',
         institution: 'Volt France / Europa',
-        description: 'Participation au développement des propositions politiques de la branche française et élaboration du programme électoral municipal axé sur la sécurité.',
+        description: 'Contribution au développement des propositions politiques pour l’antenne française et participation au programme électoral municipal axé sur la sécurité.',
         highlight: 'Stage en Politiques Publiques',
         category: 'experience',
         logo: '/Logo_Volt_Europa.svg'
@@ -144,10 +144,10 @@ export const translations = {
       {
         id: 3,
         period: 'JAN 2025 — MAI 2025',
-        role: 'Échange Universitaire — Politique US & UE',
+        role: 'Échange Académique — Politique Américaine & Européenne',
         institution: 'University of North Carolina at Chapel Hill (UNC)',
-        description: 'Programme d’échange spécialisé en institutions européennes et politique américaine (résultats d’excellence A / B+).',
-        highlight: 'Échange Académique',
+        description: 'Programme d’échange universitaire approfondi sur les institutions européennes et la vie politique américaine (résultats A / B+).',
+        highlight: 'Échange Universitaire',
         category: 'education',
         logo: '/unc chapel hill.webp'
       },
@@ -156,7 +156,7 @@ export const translations = {
         period: 'AOÛT 2022 — DÉC 2025',
         role: 'Bachelor (BA) en Science Politique',
         institution: 'Université McGill (Montréal, Québec)',
-        description: 'Spécialisation en politique américaine, européenne, relations internationales et histoire américaine. Cours approfondis en économie politique et analyse quantitative.',
+        description: 'Spécialisation en relations internationales, politique américaine et européenne, et histoire américaine. Cours approfondis en économie politique et analyse quantitative.',
         highlight: 'Diplôme de Bachelor',
         category: 'education',
         logo: '/McGill_University_CoA.svg'
@@ -166,29 +166,29 @@ export const translations = {
         period: '2020 — 2022',
         role: 'Rapporteur de la Commission Environnement',
         institution: 'Congrès des Jeunes de Nouvelle-Calédonie',
-        description: 'Rédaction de propositions de lois du territoire (400k hab.). Auteur du texte sur la promotion des formations agricoles et aquacoles adopté le 13 janvier 2021.',
-        highlight: 'Politiques Publiques & Engagement',
+        description: 'Rédaction de propositions de lois pour la jeunesse du territoire (400 000 hab.). Auteur de la proposition sur les formations agricoles et aquacoles adoptée le 13 janvier 2021.',
+        highlight: 'Engagement & Politiques Publiques',
         category: 'experience'
       }
     ],
 
     // Works Section
-    featuredCodeTitle: 'PROJETS DE CODE & RECHERCHE EN VEDETTE',
-    retrievingArchives: 'Récupération des dépôts...',
-    failedToRetrieve: 'Échec de la récupération :',
-    noDescription: 'Aucune description fournie pour ce dépôt.',
+    featuredCodeTitle: 'PROJETS DE CODE ET DE RECHERCHE',
+    retrievingArchives: 'Chargement des projets...',
+    failedToRetrieve: 'Impossible de charger les dépôts :',
+    noDescription: 'Aucune description disponible pour ce dépôt.',
 
     // Photography Section
-    photographyTitle: 'PHOTOGRAPHIE (PRATIQUE DEPUIS 2019)',
+    photographyTitle: 'PHOTOGRAPHIE (DEPUIS 2019)',
 
     // Drawer
     drawerSubtitle: 'CONTACT',
-    drawerTitle: 'DISCUTONS ENSEMBLE.',
-    drawerDescription: 'N’hésitez pas à me contacter pour échanger sur la recherche en politiques publiques, les affaires européennes et internationales ou des projets de photographie.',
-    copyEmail: "COPIER L'EMAIL",
+    drawerTitle: 'PRENONS CONTACT.',
+    drawerDescription: 'N’hésitez pas à me contacter pour échanger sur l’analyse des politiques publiques, les affaires européennes et internationales, ou des projets photographiques.',
+    copyEmail: "COPIER L'ADRESSE EMAIL",
     copiedToast: 'Adresse email copiée dans le presse-papier !',
     curriculumVitae: 'CURRICULUM VITAE',
-    resumeSubtitle: 'PDF • Diplômé McGill / MSc LSE',
+    resumeSubtitle: 'PDF • BA McGill / MSc LSE',
     socialProfiles: 'PROFILS & PORTFOLIO',
     phoneLabel: 'TÉLÉPHONE',
 
