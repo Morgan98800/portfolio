@@ -78,7 +78,7 @@ export const translations = {
         period: '2020 — 2022',
         role: 'Rapporteur for Environment Committee',
         institution: 'New Caledonia Youth Congress',
-        description: 'Took part in drafting bills for the youth of the territory (400k pop). Authored the agricultural & aquacultural training bill adopted on Jan 13, 2021.',
+        description: 'Took part in drafting bills for the youth of the territory (270k pop). Authored the agricultural & aquacultural training bill adopted on Jan 13, 2021.',
         highlight: 'Public Policy & Leadership',
         category: 'experience'
       }
@@ -184,7 +184,7 @@ export const translations = {
         period: '2020 — 2022',
         role: 'Rapporteur de la Commission Environnement',
         institution: 'Congrès des Jeunes de Nouvelle-Calédonie',
-        description: 'Rédaction de propositions de lois pour la jeunesse du territoire (400 000 hab.). Auteur de la proposition sur les formations agricoles et aquacoles adoptée le 13 janvier 2021.',
+        description: 'Rédaction de propositions de lois pour la jeunesse du territoire (270 000 hab.). Auteur de la proposition sur les formations agricoles et aquacoles adoptée le 13 janvier 2021.',
         highlight: 'Engagement & Politiques Publiques',
         category: 'experience'
       }
