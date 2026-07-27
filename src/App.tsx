@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Loader2, Mail, Code2 } from 'lucide-react';
+import { Loader2, Mail, Code2, ArrowDownRight, FileText } from 'lucide-react';
 import { useGithubRepos } from './hooks/useGithubRepos';
 import { RepoCard } from './components/RepoCard';
 import { PhotoGallery } from './components/PhotoGallery';
@@ -8,6 +8,7 @@ import { ContactDrawer } from './components/ContactDrawer';
 import { Toast } from './components/Toast';
 import { LanguageToggle } from './components/LanguageToggle';
 import { ThemeToggle } from './components/ThemeToggle';
+import { Footer } from './components/Footer';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import './App.css';
 
@@ -65,6 +66,22 @@ function MainLayout() {
               <div className="hero-badge">{t.location}</div>
             </div>
             <p className="hero-tagline-text">{t.heroTagline}</p>
+
+            {/* Premium CTA Actions */}
+            <div className="hero-cta-group">
+              <button className="btn-cta-primary" onClick={() => setIsDrawerOpen(true)}>
+                <Mail size={16} />
+                <span>{t.navContact} & CV</span>
+              </button>
+              <a href="#journey" className="btn-cta-secondary">
+                <span>View Academic Journey</span>
+                <ArrowDownRight size={16} />
+              </a>
+              <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="btn-cta-secondary cv-pdf-btn">
+                <FileText size={16} />
+                <span>CV (PDF)</span>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -109,19 +126,8 @@ function MainLayout() {
         <PhotoGallery />
       </main>
       
-      <footer className="footer container">
-        <div className="footer-content">
-          <div className="footer-left">
-            <p>© {new Date().getFullYear()} MORGAN CANTERI — {t.allRightsReserved}</p>
-          </div>
-          <div className="footer-right">
-            <button className="footer-contact-btn" onClick={() => setIsDrawerOpen(true)}>
-              <Mail size={14} />
-              <span>{t.navContact}</span>
-            </button>
-          </div>
-        </div>
-      </footer>
+      {/* High-End Site Footer */}
+      <Footer onOpenContact={() => setIsDrawerOpen(true)} />
     </div>
   );
 }
