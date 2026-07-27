@@ -58,12 +58,15 @@ export function useGithubRepos(username: string, lang: 'en' | 'fr' = 'en') {
           b.stargazers_count - a.stargazers_count
         );
 
-        // Attach fallback descriptions if missing
+        // Attach fallback descriptions if missing and override live URL for federal-europe-explorer
         const enhancedData = sortedData.map((repo: Repository) => {
           const key = repo.name.toLowerCase();
           const customDesc = REPO_DESCRIPTIONS[key];
           const description = repo.description || (customDesc ? customDesc[lang] : undefined);
-          return { ...repo, description };
+          const html_url = key.includes('federal') 
+            ? 'https://morgan98800.github.io/federal-europe-explorer/' 
+            : repo.html_url;
+          return { ...repo, description, html_url };
         });
         
         setRepos(enhancedData);

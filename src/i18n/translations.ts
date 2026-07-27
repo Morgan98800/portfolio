@@ -35,14 +35,14 @@ export const translations = {
         logo: '/lse logo.png'
       },
       {
-        id: 2,
-        period: 'AUG 2022 — DEC 2025',
-        role: 'BA in Political Science',
-        institution: 'McGill University (Montréal, Quebec)',
-        description: 'Concentration in US, EU, and International Relations, American History. Coursework in policy frameworks, political economy, and quantitative analysis.',
-        highlight: 'Bachelor Degree',
-        category: 'education',
-        logo: '/McGill_University_CoA.svg'
+        id: 4,
+        period: 'MAY 2025 — AUG 2025',
+        role: 'Policy Development Intern',
+        institution: 'Volt France / Europa',
+        description: 'Participated in policy formulation for the French branch and contributed to the municipal election program focused on security policy.',
+        highlight: 'Policy Internship',
+        category: 'experience',
+        logo: '/Logo_Volt_Europa.svg'
       },
       {
         id: 3,
@@ -55,14 +55,14 @@ export const translations = {
         logo: '/unc chapel hill.webp'
       },
       {
-        id: 4,
-        period: 'MAY 2025 — AUG 2025',
-        role: 'Policy Development Intern',
-        institution: 'Volt France / Europa',
-        description: 'Participated in policy formulation for the French branch and contributed to the municipal election program focused on security policy.',
-        highlight: 'Policy Internship',
-        category: 'experience',
-        logo: '/Logo_Volt_Europa.svg'
+        id: 2,
+        period: 'AUG 2022 — DEC 2025',
+        role: 'BA in Political Science',
+        institution: 'McGill University (Montréal, Quebec)',
+        description: 'Concentration in US, EU, and International Relations, American History. Coursework in policy frameworks, political economy, and quantitative analysis.',
+        highlight: 'Bachelor Degree',
+        category: 'education',
+        logo: '/McGill_University_CoA.svg'
       },
       {
         id: 5,
@@ -132,14 +132,14 @@ export const translations = {
         logo: '/lse logo.png'
       },
       {
-        id: 2,
-        period: 'AOÛT 2022 — DÉC 2025',
-        role: 'Bachelor (BA) en Science Politique',
-        institution: 'Université McGill (Montréal, Québec)',
-        description: 'Spécialisation en politique américaine, européenne, relations internationales et histoire américaine. Cours approfondis en économie politique et analyse quantitative.',
-        highlight: 'Diplôme de Bachelor',
-        category: 'education',
-        logo: '/McGill_University_CoA.svg'
+        id: 4,
+        period: 'MAI 2025 — AOÛT 2025',
+        role: 'Stagiaire en Développement de Politiques',
+        institution: 'Volt France / Europa',
+        description: 'Participation au développement des propositions politiques de la branche française et élaboration du programme électoral municipal axé sur la sécurité.',
+        highlight: 'Stage en Politiques Publiques',
+        category: 'experience',
+        logo: '/Logo_Volt_Europa.svg'
       },
       {
         id: 3,
@@ -152,14 +152,14 @@ export const translations = {
         logo: '/unc chapel hill.webp'
       },
       {
-        id: 4,
-        period: 'MAI 2025 — AOÛT 2025',
-        role: 'Stagiaire en Développement de Politiques',
-        institution: 'Volt France / Europa',
-        description: 'Participation au développement des propositions politiques de la branche française et élaboration du programme électoral municipal axé sur la sécurité.',
-        highlight: 'Stage en Politiques Publiques',
-        category: 'experience',
-        logo: '/Logo_Volt_Europa.svg'
+        id: 2,
+        period: 'AOÛT 2022 — DÉC 2025',
+        role: 'Bachelor (BA) en Science Politique',
+        institution: 'Université McGill (Montréal, Québec)',
+        description: 'Spécialisation en politique américaine, européenne, relations internationales et histoire américaine. Cours approfondis en économie politique et analyse quantitative.',
+        highlight: 'Diplôme de Bachelor',
+        category: 'education',
+        logo: '/McGill_University_CoA.svg'
       },
       {
         id: 5,

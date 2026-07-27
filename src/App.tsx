@@ -41,10 +41,6 @@ function MainLayout() {
 
       {/* Header Bar */}
       <header className="header container">
-        <div className="logo-brand">
-          <span className="logo-dot"></span>
-          <span className="logo-name">MC</span>
-        </div>
         <nav className="nav-links">
           <a href="#works" className="nav-link">{t.navCode}</a>
           <a href="#photography" className="nav-link">{t.navPhotography}</a>
