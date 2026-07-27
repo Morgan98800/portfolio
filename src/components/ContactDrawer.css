@@ -4,8 +4,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   z-index: 999;
   display: flex;
   justify-content: flex-end;
@@ -19,7 +19,7 @@
   color: var(--text-primary);
   display: flex;
   flex-direction: column;
-  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.3);
   padding: 2.5rem;
   overflow-y: auto;
 }
@@ -46,14 +46,14 @@
 
 .drawer-subtitle {
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-secondary);
 }
 
 .drawer-close {
-  background: none;
+  background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   width: 36px;
   height: 36px;
@@ -63,12 +63,13 @@
   justify-content: center;
   cursor: pointer;
   color: var(--text-primary);
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .drawer-close:hover {
   background-color: var(--text-primary);
   color: var(--bg-primary);
+  transform: scale(1.05);
 }
 
 .drawer-body {
@@ -80,9 +81,10 @@
 
 .drawer-title {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1;
+  color: var(--text-primary);
 }
 
 .drawer-description {
@@ -92,10 +94,10 @@
 }
 
 .contact-action-box {
-  background-color: #f7f7f7;
+  background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   padding: 1.25rem;
-  border-radius: 6px;
+  border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
@@ -108,7 +110,7 @@
 }
 
 .contact-icon {
-  color: var(--text-secondary);
+  color: var(--accent);
 }
 
 .contact-email-text {
@@ -116,6 +118,7 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   word-break: break-all;
+  color: var(--text-primary);
 }
 
 .contact-phone-text {
@@ -131,7 +134,7 @@
   padding: 0.75rem 1rem;
   font-family: inherit;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
@@ -139,13 +142,14 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border-radius: 4px;
-  transition: opacity 0.2s ease;
+  border-radius: var(--radius-sm);
+  transition: opacity 0.25s ease, transform 0.25s ease;
   margin-top: 0.25rem;
 }
 
 .copy-btn:hover {
   opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .drawer-section {
@@ -156,7 +160,7 @@
 
 .section-label {
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-secondary);
@@ -168,15 +172,17 @@
   justify-content: space-between;
   padding: 1.25rem;
   border: 1px solid var(--border-color);
-  border-radius: 6px;
+  border-radius: var(--radius-md);
   text-decoration: none;
   color: var(--text-primary);
-  transition: all 0.2s ease;
+  background-color: var(--bg-secondary);
+  transition: all 0.25s ease;
 }
 
 .cv-download-card:hover {
-  border-color: var(--text-primary);
-  background-color: #fafafa;
+  border-color: var(--border-hover);
+  background-color: var(--bg-surface);
+  transform: translateY(-2px);
 }
 
 .cv-info {
@@ -209,14 +215,15 @@
   gap: 0.625rem;
   padding: 0.875rem 1rem;
   border: 1px solid var(--border-color);
-  border-radius: 6px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-secondary);
   text-decoration: none;
   color: var(--text-primary);
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.05em;
   position: relative;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .social-btn.full-span-btn {
@@ -224,8 +231,9 @@
 }
 
 .social-btn:hover {
-  border-color: var(--text-primary);
-  background-color: #fafafa;
+  border-color: var(--border-hover);
+  background-color: var(--bg-surface);
+  transform: translateY(-2px);
 }
 
 .corner-icon {

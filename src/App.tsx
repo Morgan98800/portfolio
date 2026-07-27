@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Loader2, Mail } from 'lucide-react';
+import { Loader2, Mail, Code2 } from 'lucide-react';
 import { useGithubRepos } from './hooks/useGithubRepos';
 import { RepoCard } from './components/RepoCard';
 import { PhotoGallery } from './components/PhotoGallery';
@@ -7,6 +7,7 @@ import { AboutTimeline } from './components/AboutTimeline';
 import { ContactDrawer } from './components/ContactDrawer';
 import { Toast } from './components/Toast';
 import { LanguageToggle } from './components/LanguageToggle';
+import { ThemeToggle } from './components/ThemeToggle';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import './App.css';
 
@@ -38,13 +39,18 @@ function MainLayout() {
         onCopyEmail={handleCopyEmail}
       />
 
-      {/* Clean Minimal Header */}
+      {/* Header Bar */}
       <header className="header container">
+        <div className="logo-brand">
+          <span className="logo-dot"></span>
+          <span className="logo-name">MC</span>
+        </div>
         <nav className="nav-links">
           <a href="#works" className="nav-link">{t.navCode}</a>
           <a href="#photography" className="nav-link">{t.navPhotography}</a>
           <a href="https://www.linkedin.com/in/morgan-canteri-9a3900297/" target="_blank" rel="noopener noreferrer" className="nav-link">{t.navLinkedIn}</a>
           <LanguageToggle />
+          <ThemeToggle />
           <button className="nav-link nav-btn-link" onClick={() => setIsDrawerOpen(true)}>
             {t.navContact}
           </button>
@@ -72,7 +78,13 @@ function MainLayout() {
         {/* Gallery / Projects Section */}
         <section className="gallery-section container" id="works">
           <div className="section-header">
-            <h2 className="section-title">{t.featuredCodeTitle}</h2>
+            <div>
+              <span className="section-eyebrow">
+                <Code2 size={14} />
+                <span>OPEN SOURCE & RESEARCH</span>
+              </span>
+              <h2 className="section-title">{t.featuredCodeTitle}</h2>
+            </div>
           </div>
 
           {loading && (
