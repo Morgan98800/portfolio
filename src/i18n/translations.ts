@@ -35,6 +35,16 @@ export const translations = {
         logo: '/lse logo.png'
       },
       {
+        id: 7,
+        period: 'AUG 2025 — DEC 2025',
+        role: 'Strategic Policy Consultant — AI Medical Devices',
+        institution: "INESSS (Institut national d'excellence en santé et en services sociaux)",
+        description: "As part of a strategic consulting project for INESSS, examined the integration of AI medical devices into Québec's health system. Benchmarked international HTA standards (ICER & HAS) to identify framework gaps and formulated an evaluation roadmap across their full lifecycle.",
+        highlight: 'Strategic Consulting',
+        category: 'experience',
+        logo: '/INSTITUT-NATIONAL-DEXCELLENCE-EN-SANTE-ET-EN-SERVICES-SOCIAUX-INESSS.png'
+      },
+      {
         id: 4,
         period: 'MAY 2025 — AUG 2025',
         role: 'Policy Development Intern',
@@ -139,6 +149,16 @@ export const translations = {
         highlight: 'Master MSc',
         category: 'education',
         logo: '/lse logo.png'
+      },
+      {
+        id: 7,
+        period: 'AOÛT 2025 — DÉC 2025',
+        role: 'Consultant en Politiques de Santé — Dispositifs Médicaux IA',
+        institution: "INESSS (Institut national d'excellence en santé et en services sociaux)",
+        description: "Dans le cadre d'un projet de conseil stratégique pour l'INESSS, étude de l'intégration des dispositifs médicaux d'IA au système de santé québécois. Analyse comparative des normes internationales d'évaluation (ICER & HAS) et élaboration d'une feuille de route globale d'évaluation.",
+        highlight: 'Conseil Stratégique',
+        category: 'experience',
+        logo: '/INSTITUT-NATIONAL-DEXCELLENCE-EN-SANTE-ET-EN-SERVICES-SOCIAUX-INESSS.png'
       },
       {
         id: 4,
