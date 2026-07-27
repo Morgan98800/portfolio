@@ -64,7 +64,7 @@ export function useGithubRepos(username: string, lang: 'en' | 'fr' = 'en') {
           const customDesc = REPO_DESCRIPTIONS[key];
           const description = repo.description || (customDesc ? customDesc[lang] : undefined);
           const html_url = key.includes('federal') 
-            ? 'https://morgan98800.github.io/federal-europe-explorer/' 
+            ? 'https://morgan98800.github.io/federal-eu-project' 
             : repo.html_url;
           return { ...repo, description, html_url };
         });

@@ -10,13 +10,13 @@ export const translations = {
 
     // Hero
     heroSubtitle: 'Incoming MSc Student in European & International Politics & Policy at LSE',
-    heroTagline: 'McGill BA in Political Science • Policy Analysis & GIS Mapping',
+    heroTagline: 'McGill BA in Political Science • Policy Analysis & Public Affairs',
     location: 'London, UK / Montréal, Canada',
 
     // About / Journey Section
     aboutBadge: 'ACADEMIC PROFILE & JOURNEY',
     aboutHeading: 'POLICY ANALYSIS, EUROPEAN & INTERNATIONAL AFFAIRS.',
-    aboutText: 'Training in policy analysis and formulation. Applying analytical skills, GIS mapping, and deep knowledge of American and European politics to effectively frame policy questions and solutions in a rapidly changing world. Practicing photography since 2019.',
+    aboutText: 'Training in policy analysis and formulation. Applying analytical skills and deep knowledge of American and European politics to effectively frame policy questions and solutions in a rapidly changing world. Practicing photography since 2019.',
     btnViewResume: 'VIEW RESUME (PDF)',
     timelineTitle: 'ACADEMIC & PROFESSIONAL JOURNEY',
 
@@ -87,7 +87,7 @@ export const translations = {
     // Drawer
     drawerSubtitle: 'CONTACT',
     drawerTitle: "LET'S CONNECT.",
-    drawerDescription: 'Feel free to reach out regarding policy research, European & international affairs, spatial mapping, or photography projects.',
+    drawerDescription: 'Feel free to reach out regarding policy research, European & international affairs, or photography projects.',
     copyEmail: 'COPY EMAIL',
     copiedToast: 'Copied email to clipboard!',
     curriculumVitae: 'CURRICULUM VITAE',
@@ -107,13 +107,13 @@ export const translations = {
 
     // Hero
     heroSubtitle: 'Futur étudiant en MSc European & International Politics & Policy à la LSE',
-    heroTagline: 'Diplômé BA McGill en Science Politique • Analyse des Politiques Publiques & Cartographie GIS',
+    heroTagline: 'Diplômé BA McGill en Science Politique • Analyse des Politiques Publiques',
     location: 'Londres, R-U / Montréal, Canada',
 
     // About / Journey Section
     aboutBadge: 'PROFIL ACADÉMIQUE & PARCOURS',
     aboutHeading: "ANALYSE DES POLITIQUES PUBLIQUES ET AFFAIRES EUROPÉENNES & INTERNATIONALES.",
-    aboutText: "Formé à l'analyse et à la formulation des politiques publiques. J'applique des compétences analytiques, de la cartographie GIS et une connaissance approfondie des politiques américaine et européenne pour cadrer efficacement les enjeux dans un monde en constante mutation. Pratique de la photographie depuis 2019.",
+    aboutText: "Formé à l'analyse et à la formulation des politiques publiques. J'applique des compétences analytiques et une connaissance approfondie des politiques américaine et européenne pour cadrer efficacement les enjeux dans un monde en constante mutation. Pratique de la photographie depuis 2019.",
     btnViewResume: 'VOIR LE CV (PDF)',
     timelineTitle: 'PARCOURS ACADÉMIQUE ET PROFESSIONNEL',
 
@@ -184,7 +184,7 @@ export const translations = {
     // Drawer
     drawerSubtitle: 'CONTACT',
     drawerTitle: 'DISCUTONS ENSEMBLE.',
-    drawerDescription: 'N’hésitez pas à me contacter pour échanger sur la recherche en politiques publiques, les affaires européennes et internationales, la cartographie spatiale ou des projets de photographie.',
+    drawerDescription: 'N’hésitez pas à me contacter pour échanger sur la recherche en politiques publiques, les affaires européennes et internationales ou des projets de photographie.',
     copyEmail: "COPIER L'EMAIL",
     copiedToast: 'Adresse email copiée dans le presse-papier !',
     curriculumVitae: 'CURRICULUM VITAE',
