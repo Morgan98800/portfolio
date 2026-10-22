@@ -115,6 +115,12 @@ export const translations = {
     phoneLabel: 'PHONE',
 
     // Footer
+    footerBio: 'Incoming LSE MSc Student in European & International Politics & Policy. Specializing in public policy formulation, international relations, and quantitative analysis.',
+    footerAvailable: 'Available for Policy Research & Advisory',
+    footerNavParcours: 'Parcours & Experience',
+    footerNavWorks: 'Research & Code Projects',
+    footerNavPhotography: 'Visual Photography',
+    footerNavCv: 'CV Document (PDF)',
     allRightsReserved: 'ALL RIGHTS RESERVED'
   },
   fr: {
@@ -231,6 +237,12 @@ export const translations = {
     phoneLabel: 'TÉLÉPHONE',
 
     // Footer
+    footerBio: 'Étudiant admis en MSc European & International Politics & Policy à la LSE. Spécialisé dans l’analyse des politiques publiques, les relations internationales et l’analyse quantitative.',
+    footerAvailable: 'Disponible pour recherche & conseil en politiques publiques',
+    footerNavParcours: 'Parcours & Expérience',
+    footerNavWorks: 'Projets de Code & Recherche',
+    footerNavPhotography: 'Photographie Artistique',
+    footerNavCv: 'Curriculum Vitae (PDF)',
     allRightsReserved: 'TOUS DROITS RÉSERVÉS'
   }
 };

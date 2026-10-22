@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Repository } from '../hooks/useGithubRepos';
-import { Star, GitFork, ExternalLink, Code2, Terminal } from 'lucide-react';
+import { Star, GitFork, ExternalLink, Code2, Terminal, MapPin, Globe } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 import './RepoCard.css';
 
 interface RepoCardProps {
@@ -18,8 +19,21 @@ const LANGUAGE_COLORS: Record<string, string> = {
 };
 
 export const RepoCard: React.FC<RepoCardProps> = ({ repo, index }) => {
+  const { language } = useLanguage();
   const animationDelay = `${index * 0.1}s`;
   const langColor = LANGUAGE_COLORS[repo.language] || 'var(--accent)';
+
+  // Choose appropriate semantic icon based on project type
+  const renderIcon = () => {
+    const nameLower = repo.name.toLowerCase();
+    if (nameLower.includes('carte') || nameLower.includes('octobre') || repo.topics?.includes('geospatial')) {
+      return <MapPin size={20} className="repo-icon repo-icon-map" />;
+    }
+    if (nameLower.includes('federal') || nameLower.includes('europe')) {
+      return <Globe size={20} className="repo-icon repo-icon-globe" />;
+    }
+    return <Terminal size={20} className="repo-icon" />;
+  };
 
   return (
     <a 
@@ -36,6 +50,12 @@ export const RepoCard: React.FC<RepoCardProps> = ({ repo, index }) => {
             <span className="lang-dot" style={{ backgroundColor: langColor }}></span>
             <span>{repo.language || 'Code'}</span>
           </div>
+          {repo.isLive && (
+            <div className="repo-live-pill">
+              <span className="live-dot-pulse"></span>
+              <span>LIVE</span>
+            </div>
+          )}
         </div>
         
         <div className="repo-card-action">
@@ -45,28 +65,35 @@ export const RepoCard: React.FC<RepoCardProps> = ({ repo, index }) => {
 
       <div className="repo-card-body">
         <div className="repo-title-row">
-          <Terminal size={20} className="repo-icon" />
+          {renderIcon()}
           <h3 className="repo-card-title">{repo.name}</h3>
         </div>
         <p className="repo-card-desc">
-          {repo.description || 'Computational analysis and research software toolkit.'}
+          {repo.description || (language === 'fr' ? 'Projet de recherche et analyse informatique.' : 'Computational analysis and research software toolkit.')}
         </p>
       </div>
 
       <div className="repo-card-footer">
-        <div className="repo-stats">
-          <span className="stat-item">
-            <Star size={14} />
-            <span>{repo.stargazers_count}</span>
-          </span>
-          <span className="stat-item">
-            <GitFork size={14} />
-            <span>{repo.forks_count || 0}</span>
-          </span>
-        </div>
+        {repo.isLive ? (
+          <div className="repo-live-status-text">
+            <span className="live-dot-pulse-mini"></span>
+            <span>{language === 'fr' ? 'Application Web' : 'Web Application'}</span>
+          </div>
+        ) : (
+          <div className="repo-stats">
+            <span className="stat-item">
+              <Star size={14} />
+              <span>{repo.stargazers_count}</span>
+            </span>
+            <span className="stat-item">
+              <GitFork size={14} />
+              <span>{repo.forks_count || 0}</span>
+            </span>
+          </div>
+        )}
         <span className="view-repo-btn">
-          <span>Explore Repo</span>
-          <Code2 size={14} />
+          <span>{repo.isLive ? (language === 'fr' ? 'Consulter le projet' : 'Launch Platform') : (language === 'fr' ? 'Dépôt GitHub' : 'Explore Repo')}</span>
+          {repo.isLive ? <ExternalLink size={14} /> : <Code2 size={14} />}
         </span>
       </div>
     </a>

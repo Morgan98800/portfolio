@@ -18,11 +18,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
           <div className="footer-col brand-col">
             <h3 className="footer-brand-name">MORGAN CANTERI</h3>
             <p className="footer-bio-snippet">
-              Incoming LSE MSc Student in European & International Politics & Policy. Specializing in public policy formulation, international relations, and quantitative analysis.
+              {t.footerBio}
             </p>
             <div className="footer-status-pill">
               <span className="status-dot-pulse"></span>
-              <span>Available for Policy Research & Advisory</span>
+              <span>{t.footerAvailable}</span>
             </div>
           </div>
 
@@ -30,12 +30,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
           <div className="footer-col links-col">
             <h4 className="footer-col-title">NAVIGATION</h4>
             <ul className="footer-links">
-              <li><a href="#journey">Parcours & Experience</a></li>
-              <li><a href="#works">Research & Code Projects</a></li>
-              <li><a href="#photography">Visual Photography</a></li>
+              <li><a href="#journey">{t.footerNavParcours}</a></li>
+              <li><a href="#works">{t.footerNavWorks}</a></li>
+              <li><a href="#photography">{t.footerNavPhotography}</a></li>
               <li>
                 <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="cv-footer-link">
-                  <span>CV Document (PDF)</span>
+                  <span>{t.footerNavCv}</span>
                   <FileText size={14} />
                 </a>
               </li>
